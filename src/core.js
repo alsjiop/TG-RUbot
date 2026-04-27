@@ -31,20 +31,17 @@ export const VISITOR_WELCOME_TEXT = "*Welcome\\!*" +
     "\n>I'll forward your messages to my owner, and vice versa\\." +
     "\n*There are some details below:*" +
     "\n**>EMOJI REACTION:" +
-    //"\n>  The emoji reaction 🕊 as seen below this message, indicates a successful forward\\." +
-    "\n>  The emoji reaction 🕊 as seen below this message, indicates a successful forwarding\\." +
+    "\n>  The emoji reaction 🕊 as seen below this message, indicates a successful forward\\." +
     "\n>  If you don't see that, the message hasn't been forwarded\\." +
-    //"\n>" +
+    "\n>" +
     "\n>  You can tap other emoji reaction for both your and my messages\\(except this one\\), and I'll forward it as well\\." +
     "\n>  But as a bot, limited by TG, I can only send ONE FREE emoji reaction for each message\\." +
     "\n>  So that if you're a tg\\-premium\\-user and tap many emoji reactions for one message\\. I'll only forward the last one if it's a free emoji\\.||" +
-    "\n>" +
     "\n**>EDIT MESSAGE:" +
     "\n>  You can edit your message as usual, but ONLY TEXT message for now\\. " +
     "If forward success, the emoji reaction 🦄 will swiftly appear and revert to 🕊 after about 1s\\." +
     "\n>  If you don't see that, the EDITING hasn't been forwarded\\." +
     "\n>  Perhaps you miss seeing that, you can try edit AGAIN with DIFFERENT CONTENT\\.||" +
-    "\n>" +
     "\n**>DELETE MESSAGE:" +
     "\n>  You can delete your messages I forwarded by REPLYING the origin message and TYPING `#del` to me\\." +
     " No additional process is needed\\." +
@@ -358,8 +355,7 @@ export async function handleWebhook(request, ownerUid, botToken, secretToken, ch
       let introduction = VISITOR_WELCOME_TEXT;
       // for owner only
       introduction += "\n" +
-          //"\n*The contents below are ONLY visible and valid for bot owner\\.*" +
-          "\n*The contents below are ONLY visible and valid for bot owner\\(YOU\\)\\.*" +
+          "\n*The contents below are ONLY visible and valid for bot owner\\.*" +
           "\n" +
           "\n**>DELETE MESSAGE:" +
           "\n>  I can delete both your messages and mine in the group since I have the necessary permissions\\." +
